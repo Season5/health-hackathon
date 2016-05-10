@@ -9,7 +9,7 @@
 
 .menu > li > a {
     text-align: center;
-    color: white;
+    color: #fff;
 }
 .top-bar,
 .top-bar ul {
@@ -22,23 +22,23 @@
     margin: 0;
     height: 60px;
     background-color: transparent;
-    transition: 0.5s;
+    transition: .5s;
 }
 .header.scrolling {
     background-color: green;
-    opacity: 0.8;
-    transition: 0.5s;
+    opacity: .8;
+    transition: .5s;
 }
 #register-top-right {
-    border: solid 1px white;
+    border: solid 1px #fff;
     border-radius: 5px;
     margin-right: 50px;
     padding-left: 15px;
     padding-right: 15px;
-    -webkit-transition: background-color 0.5s ease-in-out;
-    background-color: white;
-    color: black;
-    transition: 0.5s;
+    -webkit-transition: background-color .5s ease-in-out;
+    background-color: #fff;
+    color: #000;
+    transition: .5s;
 }
 #register-top-right:hover {
     /*
@@ -46,12 +46,12 @@
     color: black;
     transition: 0.5s;
 */
-    opacity: 0.5;
+    opacity: .5;
 }
 li a:hover {
     color: red;
     border-bottom: 1px solid red;
-    transition: 0.5;
+    transition: .5;
 }
 
 /************************************************************************************ 
@@ -59,13 +59,13 @@ li a:hover {
 ************************************************************************************/
 
 .hero {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.49), rgba(13, 32, 42, 0.39)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGElEQVQIW2NkYGD4z8DAwMgAI0AMdM5/ACRwAgMsRgU3AAAAAElFTkSuQmCC), url(../img/hero3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.49), rgba(13, 32, 42, 0.39)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGElEQVQIW2NkYGD4z8DAwMgAI0AMdM5/ACRwAgMsRgU3AAAAAElFTkSuQmCC), url(../img/hero3.jpg);
     height: 100vh;
     width: 100%;
 }
 .hero p {
     text-align: center;
-    color: white;
+    color: #fff;
     font-size: 2em;
     line-height: 35px;
     font-family: 'Droid Serif', serif;
@@ -74,7 +74,16 @@ li a:hover {
     padding-top: 300px;
 }
 .hero p #font-big {
-    font-size: 2.5em
+    font-size: 2.5em;
+}
+.hero #register-pad button {
+    border: solid white 1px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
 }
 .hero button:hover {
     border-color: green;
@@ -83,13 +92,23 @@ li a:hover {
 #register-pad {
     padding-top: 50px;
 }
+@media screen and (max-width: 639px) {
+    #hero-text-padding p {
+        position: absolute;
+        top: 200px;
+    }
+}
+@media screen and (max-width: 529px) {
+    #hero-text-padding p {
+        line-height: 50px;
+    }
+}
 
 /************************************************************************************ 
                ABOUT
 ************************************************************************************/
 
 .about {
-    height: 50%;
     text-align: center;
 }
 .about h5 {
@@ -99,8 +118,11 @@ li a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 855px;
-    margin-top: 100px
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#about-padding p {
+    margin-bottom: 5px;
 }
 
 /************************************************************************************* 
@@ -117,7 +139,7 @@ li a:hover {
 
 @media screen and (max-width: 639px) {
     .menu > li > a {
-        background-color: black;
+        background-color: #000;
     }
     .menu img {
         display: none;
@@ -126,6 +148,6 @@ li a:hover {
         padding: 0;
     }
     #register-top-right {
-        margin-right: 0px;
+        margin-right: 0;
     }
 }
