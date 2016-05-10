@@ -115,6 +115,52 @@
         </div>
     </section>
 
+    <footer>
+        <div class="row footer-section">
+            <div>
+                <div class="small-12 medium-6 large-3 columns">
+                    <div id="pad-contact">
+                        <h5>CONTACT</h5>
+                        <h6>Visit Our Office</h6>
+                        <p>Adress: MCK Building, Muthangari Rd</p>
+                        <p>Phone: +254-20-5221189</p>
+                        <p>Email: info@shimbamobile.com</p>
+                    </div>
+                </div>
+                <div class="small-12 medium-6 large-3 columns">
+                    <h5>JOIN US!</h5>
+                    <p>Health professionals & patients</p>
+                    <p>Hackers & Makers</p>
+                    <p>Entrepreneurs & Health stakeholders</p>
+                </div>
+                <div class="small-12 large-6 columns">
+                    <div id="map"></div>
+                    <script>
+                        function initMap() {
+                            var mapDiv = document.getElementById('map');
+                            var map = new google.maps.Map(mapDiv, {
+                                center: {
+                                    lat: 44.540,
+                                    lng: -78.546
+                                },
+                                zoom: 8
+                            });
+                        }
+
+                    </script>
+                    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <img src="img/facebook.png">
+            <img src="img/twitter.png">
+            <img src="img/google.png">
+            <p>2016 © Health Hackathon. All rights reserved.</p>
+        </div>
+
+    </footer>
+
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
