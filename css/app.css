@@ -146,31 +146,6 @@ li a:hover {
 }
 
 /************************************************************************************ 
-  Media Query 639px responsive mode starts
-************************************************************************************/
-
-@media screen and (max-width: 639px) {
-    .menu > li > a {
-        background-color: #000;
-    }
-    .menu img {
-        display: none;
-    }
-    .top-bar {
-        padding: 0;
-    }
-    #register-top-right {
-        margin-right: 0;
-    }
-    #about-padding p {
-        font-size: 1.2em;
-    }
-    .regg h3 {
-        font-size: 2.5em;
-    }
-}
-
-/************************************************************************************ 
  Register section
 ************************************************************************************/
 
@@ -191,4 +166,32 @@ li a:hover {
     background-color: green;
     border: none;
     transition: 0.1s;
+}
+.regg h3 {
+    font-size: 3em;
+}
+
+/************************************************************************************ 
+  Media Query 639px responsive mode starts
+************************************************************************************/
+
+@media screen and (max-width: 639px) {
+    .menu > li > a {
+        background-color: #000;
+    }
+    .menu img {
+        display: none;
+    }
+    .top-bar {
+        padding: 0;
+    }
+    #register-top-right {
+        margin-right: 0;
+    }
+    #about-padding p {
+        font-size: 1.2em;
+    }
+    .regg h3 {
+        font-size: 1.2em;
+    }
 }
