@@ -2,6 +2,10 @@
                GENERAL
 ************************************************************************************/
 
+#wrap {
+    width: 90%;
+    margin: 0 auto;
+}
 
 /************************************************************************************ 
                Top-nav bar
@@ -131,8 +135,9 @@ li a:hover {
 
 .sponsors {
     text-align: center;
+    font-size: 2em;
 }
-.sponsors .column {
+.sponsors img {
     height: 200px;
 }
 
