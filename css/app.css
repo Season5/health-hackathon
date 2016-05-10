@@ -30,7 +30,7 @@
     padding-left: 5%;
 }
 .header.scrolling {
-    background-color: green;
+    background-color: #005000;
     opacity: .8;
     transition: .5s;
 }
@@ -130,6 +130,8 @@ li a:hover {
     margin-left: auto;
     margin-right: auto;
     font-size: 2em;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 /************************************************************************************* 
@@ -191,4 +193,30 @@ li a:hover {
     background-color: green;
     border: none;
     transition: 0.1s;
+}
+
+/*****************FOOTER*************************/
+
+footer {
+    background-color: mintcream;
+}
+#pad-contact {
+    margin-left: 15px
+}
+.footer-section h5 {
+    margin-top: 30px
+}
+#map {
+    width: 100%;
+    margin-top: 20px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    background-color: white;
+}
+.copyright img {
+    height: 70px
 }
