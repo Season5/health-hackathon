@@ -1,0 +1,102 @@
+body {
+    margin-top: 0;
+}
+.header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin: 0;
+    height: 50px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+.header.scrolling {
+    background-color: green;
+    transition: 0.5s;
+}
+.header .brand {
+    display: inline-block;
+    font-size: 26px;
+    padding-top: 5px;
+    padding-left: 15px;
+    color: white;
+}
+.header-ul {
+    list-style: none;
+    float: right;
+    padding-top: 10px
+}
+.header-ul > li {
+    display: inline-block;
+    color: white;
+    margin-right: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+#register-top-right {
+    border: solid 1px white;
+    border-radius: 5px;
+    margin-right: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    -webkit-transition: background-color 0.5s ease-in-out;
+}
+#register-top-right:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+/******************************/
+
+.hero {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.49), rgba(13, 32, 42, 0.39)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGElEQVQIW2NkYGD4z8DAwMgAI0AMdM5/ACRwAgMsRgU3AAAAAElFTkSuQmCC), url(../img/hero3.jpg);
+    height: 100vh;
+}
+.hero p {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    line-height: 35px;
+    font-family: 'Droid Serif', serif;
+}
+#hero-text-padding {
+    padding-top: 300px;
+}
+.hero p #font-big {
+    font-size: 2.5em
+}
+.hero button {
+    color: white;
+    border: solid white 1px;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    -webkit-transition: background-color 0.5s ease-in-out;
+}
+.hero button:hover {
+    border-color: green;
+    background-color: green;
+}
+#register-pad {
+    padding-top: 50px;
+}
+
+/******************************/
+
+.about {
+    height: 50%;
+    text-align: center;
+}
+.about h5 {
+    font-size: 2em;
+}
+#about-padding {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 855px;
+    margin-top: 100px
+}
