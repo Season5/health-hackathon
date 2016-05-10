@@ -110,6 +110,10 @@ li a:hover {
 .sponsors {
     text-align: center;
 }
+.sponsors .column {
+    height: 200px;
+    width: 200px;
+}
 
 /************************************************************************************ 
   Media Query 639px responsive mode starts
