@@ -5,13 +5,17 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Health Hackathon</title>
+    <link rel="icon" href="img/logo12.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
+
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Inconsolata|Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
+    <!--    HEADER -->
+    <!--
     <header class="header">
         <ul class="header-ul">
             <li>HOME</li>
@@ -22,8 +26,42 @@
         </ul>
         <h3 class="brand">Health</h3>
     </header>
+-->
 
+
+
+    <!-- HERO -->
     <section class="hero">
+        <header>
+            <div class="title-bar " data-responsive-toggle="example-menu" data-hide-for="medium">
+                <button style="margin-top: 3%;" class="title-bar-right menu-icon" type="button" data-toggle></button>
+                <div class="title-bar"><img style="
+    width: 50px;
+" class="web_logo" src="img/logo12.png"></div>
+            </div>
+
+            <div class="top-bar header " id="example-menu">
+                <div class="top-bar-left">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        <img style="
+    width: 50px;
+" class="web_logo" src="img/logo12.png">
+                        <!--                    <li class="menu-text">Site Title</li>-->
+
+                    </ul>
+                </div>
+                <div class="top-bar-right">
+                    <ul class="vertical medium-horizontal menu">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">PARTNER</a></li>
+                        <li><a href="#">CONTACT </a></li>
+                        <li><a id="register-top-right" href="#">REGISTER</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </header>
         <div id="hero-text-padding">
             <p>KENYAS'
                 <sapn id="font-big">LARGEST</sapn>
@@ -34,13 +72,27 @@
         </div>
     </section>
 
+    <!--   ABOUT   -->
     <section class="row about">
         <div id=about-padding>
             <h5>ABOUT THE HACKATHON</h5>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
     </section>
+
+
+
+    <!-- SPONSORS SECTION -->
     <section>
+        <div class="row sponsors">
+            <h1>Sponsors</h1>
+            <div class="small-12 medium-6 column"><img src="img/logo12.png">
+                <p>Karen Hospital</p>
+            </div>
+            <div class="small-12 medium-6 column"><img src="#">
+                <p></p>
+            </div>
+        </div>
     </section>
 
     <script src="js/vendor/jquery.js"></script>

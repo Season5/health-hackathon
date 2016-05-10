@@ -1,36 +1,33 @@
-body {
-    margin-top: 0;
+/********************************* 
+               GENERAL
+*********************************/
+
+
+/********************************* 
+               Top-nav bar
+*********************************/
+
+.menu > li > a {
+    text-align: center;
+    color: white;
+}
+.top-bar,
+.top-bar ul {
+    background-color: transparent;
 }
 .header {
     position: fixed;
     right: 0;
     left: 0;
     margin: 0;
-    height: 50px;
+    height: 60px;
     background-color: transparent;
     transition: 0.5s;
 }
 .header.scrolling {
     background-color: green;
+    opacity: 0.8;
     transition: 0.5s;
-}
-.header .brand {
-    display: inline-block;
-    font-size: 26px;
-    padding-top: 5px;
-    padding-left: 15px;
-    color: white;
-}
-.header-ul {
-    list-style: none;
-    float: right;
-    padding-top: 10px
-}
-.header-ul > li {
-    display: inline-block;
-    color: white;
-    margin-right: 10px;
-    font-family: 'Raleway', sans-serif;
 }
 #register-top-right {
     border: solid 1px white;
@@ -39,18 +36,32 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     -webkit-transition: background-color 0.5s ease-in-out;
-}
-#register-top-right:hover {
     background-color: white;
     color: black;
     transition: 0.5s;
 }
+#register-top-right:hover {
+    /*
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+*/
+    opacity: 0.5;
+}
+li a:hover {
+    color: red;
+    border-bottom: 1px solid red;
+    transition: 0.5;
+}
 
-/******************************/
+/********************************* 
+               HERO
+*********************************/
 
 .hero {
     background-image: linear-gradient( rgba(0, 0, 0, 0.49), rgba(13, 32, 42, 0.39)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGElEQVQIW2NkYGD4z8DAwMgAI0AMdM5/ACRwAgMsRgU3AAAAAElFTkSuQmCC), url(../img/hero3.jpg);
     height: 100vh;
+    width: 100%;
 }
 .hero p {
     text-align: center;
@@ -65,6 +76,8 @@ body {
 .hero p #font-big {
     font-size: 2.5em
 }
+
+/*
 .hero button {
     color: white;
     border: solid white 1px;
@@ -76,6 +89,8 @@ body {
     padding-right: 40px;
     -webkit-transition: background-color 0.5s ease-in-out;
 }
+*/
+
 .hero button:hover {
     border-color: green;
     background-color: green;
@@ -84,7 +99,9 @@ body {
     padding-top: 50px;
 }
 
-/******************************/
+/********************************* 
+               ABOUT
+*********************************/
 
 .about {
     height: 50%;
@@ -99,4 +116,31 @@ body {
     margin-right: auto;
     width: 855px;
     margin-top: 100px
+}
+
+/********************************* 
+               SPONSORS
+*********************************/
+
+.sponsors {
+    text-align: center;
+}
+
+/********************************* 
+               Media Query
+*********************************/
+
+@media screen and (max-width: 639px) {
+    .menu > li > a {
+        background-color: black;
+    }
+    .menu img {
+        display: none;
+    }
+    .top-bar {
+        padding: 0;
+    }
+    #register-top-right {
+        margin-right: 0px;
+    }
 }
