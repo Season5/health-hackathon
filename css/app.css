@@ -76,7 +76,7 @@ li a:hover {
 ************************************************************************************/
 
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.49), rgba(13, 32, 42, 0.39)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGElEQVQIW2NkYGD4z8DAwMgAI0AMdM5/ACRwAgMsRgU3AAAAAElFTkSuQmCC), url(../img/hero3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGElEQVQIW2NkYGD4z8DAwMgAI0AMdM5/ACRwAgMsRgU3AAAAAElFTkSuQmCC), url(../img/hero3.jpg);
     height: 100vh;
     width: 100%;
 }
