@@ -134,19 +134,13 @@ li a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 10% 0;
+    padding: 10% 5%;
 }
 #about-padding p {
     margin-bottom: 5px;
-    /* padding: 0 7%; */
-    /* max-width: 90%; */
-    
     margin-left: auto;
     margin-right: auto;
     font-size: 3em;
-    /* margin-left: 9vw; */
-    /* margin-right: 10vw; */
-    
     color: #504949;
 }
 
@@ -168,7 +162,7 @@ li a:hover {
 ************************************************************************************/
 .regg {
     background-color: #f2f2f2;
-    padding: 10%;
+    padding: 10% 5%;
     text-align: center;
 }
 .reg_btn {
@@ -205,9 +199,7 @@ li a:hover {
     #register-top-right {
         margin-right: 0;
     }
-    #about-padding p {
-        font-size: 1.2em;
-    }
+    #about-padding p,
     .regg h3 {
         font-size: 1.2em;
     }
@@ -268,5 +260,5 @@ span.counter {
 }
 footer .row {
     max-width: 83rem;
-    padding: 5% 0;
+    padding: 5% 4%;
 }
