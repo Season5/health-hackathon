@@ -246,13 +246,17 @@ footer {
 }
 .copyright {
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 3% 0;
     background-color: white;
 }
-.copyright img {
-    height: 70px;
-    margin-bottom: 10px
+.copyright a {
+    color: black;
+}
+.copyright a:hover {
+    color: #3e8e3e;
+}
+.copyright p {
+    margin-top: 1%;
 }
 span.counter {
     display: inline-block;
@@ -261,4 +265,8 @@ span.counter {
 footer .row {
     max-width: 83rem;
     padding: 5% 4%;
+}
+.s_media {
+    display: inline-block;
+    padding: 0 4%;
 }
