@@ -2,9 +2,26 @@
                GENERAL
 ************************************************************************************/
 
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+body {
+    font-family: "raleway", serif;
+}
 #wrap {
     width: 90%;
     margin: 0 auto;
+}
+
+/**** Reveal Modal **/
+
+@media screen and (min-width: 40em) .reveal {
+    width: 80%;
 }
 
 /************************************************************************************ 
@@ -46,11 +63,6 @@
     transition: .5s;
 }
 .xx .register-top-right:hover {
-    /*
-    background-color: white;
-    color: black;
-    transition: 0.5s;
-*/
     opacity: .5;
 }
 li a:hover {
@@ -73,7 +85,6 @@ li a:hover {
     color: #fff;
     font-size: 2em;
     line-height: 35px;
-    font-family: 'Droid Serif', serif;
 }
 #hero-text-padding {
     padding-top: 300px;
@@ -137,7 +148,6 @@ li a:hover {
     font-size: 1.9em;
     margin-left: 10vw;
     margin-right: 10vw;
-    font-family: 'Old Standard TT', serif;
     color: #504949;
 }
 
@@ -149,12 +159,6 @@ li a:hover {
     text-align: center;
     font-size: 2em;
     padding-top: 5%;
-}
-.sponsors h2 {
-    font-family: 'Droid Serif', serif;
-}
-.sponsors p {
-    font-family: 'Old Standard TT', serif;
 }
 .sponsors img {
     height: 200px;
@@ -221,7 +225,6 @@ li a:hover {
     text-align: center;
 }
 .regg h3 {
-    font-family: 'Droid Serif', serif;
     color: #272727;
 }
 .reg_btn {
@@ -248,13 +251,11 @@ footer {
 }
 .footer-section h5 {
     margin-top: 30px;
-    font-family: 'Droid Serif', serif;
     font-size: 1.5em;
     font-weight: bold;
     color: white;
 }
 .footer-section p {
-    font-family: 'Old Standard TT', serif;
     color: white;
 }
 #map {
@@ -268,7 +269,6 @@ footer {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: white;
-    font-family: 'Old Standard TT', serif;
 }
 .copyright img {
     height: 70px;
@@ -277,7 +277,4 @@ footer {
 span.counter {
     display: inline-block;
     width: 32%;
-}
-@media screen and (min-width: 40em) .reveal {
-    width: 80%;
 }
