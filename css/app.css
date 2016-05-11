@@ -31,6 +31,7 @@ body {
 .menu > li > a {
     text-align: center;
     color: #fff;
+    font-weight: bolder;
 }
 .top-bar,
 .top-bar ul {
@@ -50,6 +51,7 @@ body {
     background-color: #005000;
     opacity: .8;
     transition: .5s;
+    z-index: 10;
 }
 .xx .register-top-right {
     border: solid 1px #fff;
@@ -70,6 +72,9 @@ li a:hover {
     border-bottom: 1px solid red;
     transition: .5;
 }
+.web_logo {
+    width: 64px;
+}
 
 /************************************************************************************ 
                HERO
@@ -83,14 +88,11 @@ li a:hover {
 .hero p {
     text-align: center;
     color: #fff;
-    font-size: 2em;
-    line-height: 35px;
-}
-#hero-text-padding {
-    padding-top: 300px;
+    font-size: 3.5em;
+    line-height: 100px;
 }
 .hero p #font-big {
-    font-size: 2.5em;
+    font-size: 2em;
 }
 @media screen and (max-width: 439px) {
     .hero p #font-big {
@@ -105,19 +107,16 @@ li a:hover {
     padding: 15px;
     color: white;
     border-radius: 5px;
+    width: 300px;
 }
 .hero button:hover {
     border-color: green;
     background-color: green;
 }
-#register-pad {
-    padding-top: 50px;
+#hero-text-padding {
+    padding-top: 300px;
 }
-@media screen and (max-width: 639px) {
-    #hero-text-padding p {
-        position: absolute;
-        top: 200px;
-    }
+
 }
 @media screen and (max-width: 529px) {
     #hero-text-padding p {
@@ -128,7 +127,6 @@ li a:hover {
 /************************************************************************************ 
                ABOUT
 ************************************************************************************/
-
 .about {
     text-align: center;
 }
@@ -136,38 +134,38 @@ li a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding: 10% 0;
 }
 #about-padding p {
     margin-bottom: 5px;
-    padding: 0 7%;
-    max-width: 80%;
+    /* padding: 0 7%; */
+    /* max-width: 90%; */
+    
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.9em;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    font-size: 3em;
+    /* margin-left: 9vw; */
+    /* margin-right: 10vw; */
+    
     color: #504949;
 }
 
 /************************************************************************************* 
-               SPONSORS
+               Partners
 ************************************************************************************/
-
 .sponsors {
     text-align: center;
     font-size: 2em;
-    padding-top: 5%;
+    padding: 10% 0;
 }
 .sponsors img {
-    height: 200px;
+    height: 140px;
+    margin-bottom: 10px;
 }
 
 /************************************************************************************ 
  Register section
 ************************************************************************************/
-
 .regg {
     background-color: #f2f2f2;
     padding: 10%;
@@ -188,12 +186,12 @@ li a:hover {
 }
 .regg h3 {
     font-size: 3em;
+    color: #272727;
 }
 
 /************************************************************************************ 
   Media Query 639px responsive mode starts
 ************************************************************************************/
-
 @media screen and (max-width: 639px) {
     .menu > li > a {
         background-color: #000;
@@ -213,41 +211,31 @@ li a:hover {
     .regg h3 {
         font-size: 1.2em;
     }
+    #hero-text-padding {
+        padding-top: 100px;
+    }
+    .hero p {
+        text-align: center;
+        color: #fff;
+        font-size: 2em;
+        line-height: 50px;
+    }
+    #pad-contact {
+        padding-left: 15px
+    }
+    .xx .register-top-right {
+        margin-right: 0px;
+    }
+    .xx {
+        margin-top: -10px;
+    }
 }
 
 /************************************************************************************ 
- Register section
+ Footer section
 ************************************************************************************/
-
-.regg {
-    background-color: #f2f2f2;
-    padding: 10%;
-    text-align: center;
-}
-.regg h3 {
-    color: #272727;
-}
-.reg_btn {
-    width: 200px;
-    border-radius: 10px;
-    background-color: transparent;
-    border: 1px solid black;
-    color: black;
-    transition: 0.1s;
-}
-.reg_btn:hover {
-    background-color: green;
-    border: none;
-    transition: 0.1s;
-}
-
-/*****************FOOTER*************************/
-
 footer {
     background-color: #3e8e3e;
-}
-#pad-contact {
-    margin-left: 15px
 }
 .footer-section h5 {
     margin-top: 30px;
@@ -277,4 +265,8 @@ footer {
 span.counter {
     display: inline-block;
     width: 32%;
+}
+footer .row {
+    max-width: 83rem;
+    padding: 5% 0;
 }

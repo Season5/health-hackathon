@@ -7,17 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Hackathon</title>
     <link rel="icon" href="img/logo12.png" type="image/gif" sizes="16x16">
-    <link rel="stylesheet" href="css/foundation.css">
-    <script>
-        jQuery(document).ready(function($) {
-            $('.counter').counterUp({
-                delay: 10,
-                time: 1000
-            });
-        });
-
-    </script>
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/foundation.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/app.css">
 
@@ -45,7 +35,7 @@
         <!--top bar left -->
         <div class="top-bar-left">
             <ul class="dropdown menu" data-dropdown-menu>
-                <img style="width: 50px;" class="web_logo" src="img/logo12.png">
+                <img class="web_logo" src="img/logo12.png">
 
             </ul>
         </div>
@@ -85,18 +75,16 @@
 
     <section class="hero">
 
-
-
-
         <!-- HERO -->
         <div id="hero-text-padding">
-            <p>KENYAS'
+            <p>AFRICA'S
                 <sapn id="font-big">LARGEST</sapn>
                 <br> HEALTH HACKATHON </p>
+            <div id="register-pad">
+                <button data-open="exampleModal1"><b>REGISTER</b></button>
+            </div>
         </div>
-        <div id="register-pad">
-            <button data-open="exampleModal1">REGISTER</button>
-        </div>
+
     </section>
 
 
@@ -112,8 +100,8 @@
     <!--    Register section-->
     <section>
         <div class="regg">
-            <h3 style="margin-bottom:15px;">Want to be part of this awesome experience</h3>
-            <a data-open="exampleModal1" class="large button reg_btn">Register </a>
+            <h3 style="margin-bottom:15px;">Be part of this awesome experience</h3>
+            <a data-open="exampleModal1" class="large button reg_btn">Register Now </a>
         </div>
     </section>
 
@@ -121,12 +109,15 @@
     <section>
         <div class="row sponsors">
             <h2 style="margin-bottom:5%;">PARTNERS</h2>
-            <div class="small-12 medium-6 column"><img src="img/logo12.png">
+            <div class="small-12 medium-4 column"><img src="img/logo12.png">
                 <p>Karen Hospital</p>
             </div>
-            <div class="small-12 medium-6 column"><img src="img/csi.png">
+            <div class="small-12 medium-4 column"><img src="img/csi.png">
                 <p>Center for Social Impact</p>
 
+            </div>
+            <div class="small-12 medium-4 column"><img src="img/moringa_logo.png">
+                <p>Moringa School</p>
             </div>
         </div>
     </section>
@@ -139,17 +130,17 @@
     <footer>
         <div style="color:white;" class="row footer-section">
             <div>
-                <div class="small-12 medium-6 large-3 columns">
-                    <div id="pad-contact">
-                        <h5>CONTACT</h5>
-                        <p>Visit Our Office
-                            <p>
-                                <p>Adress: CSI, Karens Rd</p>
-                                <p>Phone: +254-20-5221189</p>
-                                <p>Email: info@centerforsocialimpact.org</p>
-                    </div>
+                <div id="pad-contact" class="small-12 medium-6 large-3 columns">
+
+                    <h5>CONTACT</h5>
+                    <p>Visit Our Office
+                        <p>
+                            <p>Adress: CSI, Karens Rd</p>
+                            <p>Phone: +254-20-5221189</p>
+                            <p>Email: info@centerforsocialimpact.org</p>
+
                 </div>
-                <div class="small-12 medium-6 large-3 columns">
+                <div id="pad-contact" class="small-12 medium-6 large-3 columns">
                     <h5>JOIN US!</h5>
                     <p>Health professionals & patients</p>
                     <p>Hackers & Makers</p>
@@ -185,25 +176,8 @@
 
 
     <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <!--
-    <script>
-        jQuery(document).ready(function($) {
-            $('span').counterUp({
-                delay: 10, // the delay time in ms
-                time: 1000 // the speed time in ms
-            });
-        });
-
-    </script>
--->
-
 </body>
 
 </html>
