@@ -81,6 +81,11 @@ li a:hover {
 .hero p #font-big {
     font-size: 2.5em;
 }
+@media screen and (max-width: 439px) {
+    .hero p #font-big {
+        font-size: 2.0em;
+    }
+}
 .hero #register-pad button {
     border: solid white 1px;
     display: block;
@@ -129,9 +134,11 @@ li a:hover {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 2em;
+    font-size: 1.9em;
     margin-left: 10vw;
     margin-right: 10vw;
+    font-family: 'Old Standard TT', serif;
+    color: #504949;
 }
 
 /************************************************************************************* 
@@ -142,6 +149,12 @@ li a:hover {
     text-align: center;
     font-size: 2em;
     padding-top: 5%;
+}
+.sponsors h2 {
+    font-family: 'Droid Serif', serif;
+}
+.sponsors p {
+    font-family: 'Old Standard TT', serif;
 }
 .sponsors img {
     height: 200px;
@@ -198,16 +211,51 @@ li a:hover {
     }
 }
 
+/************************************************************************************ 
+ Register section
+************************************************************************************/
+
+.regg {
+    background-color: #f2f2f2;
+    padding: 10%;
+    text-align: center;
+}
+.regg h3 {
+    font-family: 'Droid Serif', serif;
+    color: #272727;
+}
+.reg_btn {
+    width: 200px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    transition: 0.1s;
+}
+.reg_btn:hover {
+    background-color: green;
+    border: none;
+    transition: 0.1s;
+}
+
 /*****************FOOTER*************************/
 
 footer {
-    background-color: mintcream;
+    background-color: #3e8e3e;
 }
 #pad-contact {
     margin-left: 15px
 }
 .footer-section h5 {
-    margin-top: 30px
+    margin-top: 30px;
+    font-family: 'Droid Serif', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+.footer-section p {
+    font-family: 'Old Standard TT', serif;
+    color: white;
 }
 #map {
     width: 100%;
@@ -217,11 +265,14 @@ footer {
 }
 .copyright {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: white;
+    font-family: 'Old Standard TT', serif;
 }
 .copyright img {
-    height: 70px
+    height: 70px;
+    margin-bottom: 10px
 }
 span.counter {
     display: inline-block;
