@@ -250,6 +250,8 @@ countdown
     }
     #hero-text-padding {
         padding-top: 40%;
+        position: absolute;
+        bottom: 5%;
     }
     .hero p {
         text-align: center;
