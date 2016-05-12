@@ -246,6 +246,7 @@ countdown
         padding-top: 40%;
         position: absolute;
         bottom: 5%;
+        width: 100%;
     }
     .hero p {
         text-align: center;
@@ -318,7 +319,8 @@ footer {
 }
 span.counter {
     display: inline-block;
-    width: 32%;
+    text-align: center;
+    /*    width: 32%;*/
 }
 footer .row {
     max-width: 83rem;
@@ -328,3 +330,23 @@ footer .row {
     display: inline-block;
     padding: 0 4%;
 }
+
+/**********************************/
+
+.timer {
+    width: 200px;
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+    font-size: 20px
+}
+
+/*
+#help {
+    width: 500px;
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+    font-size: 14px
+}
+*/

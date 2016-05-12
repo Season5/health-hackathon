@@ -13,7 +13,16 @@
     <link rel="stylesheet" href="css/app.css">
     <title>Health Hackathon</title>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 10000
+            });
+        });
 
+    </script>
 </head>
 
 
@@ -129,13 +138,27 @@
     </section>
 
 
-    <!--    Register section-->
-    <section>
-        <div class="regg">
-            <h3 style="margin-bottom:15px;">Be part of this awesome experience</h3>
-            <a data-open="exampleModal1" class="large button reg_btn">Register Now </a>
+    <!-- counter SECTION -->
+    <div class="row">
+        <div style="text-align:center" class="small-12 medium-3 large-4 column">
+            <span class=" counter" style="display: inline-block;">200</span>
+            <p>Developers</p>
         </div>
-    </section>
+        <div style="text-align:center" class="small-12 medium-3 large-4 column">
+            <span class="column " style="display: inline-block;"><span>$</span><span class="counter">43,753</span></span>
+            <p>Money to be won</p>
+        </div>
+        <div style="text-align:center" class="small-12 medium-3 large-4 column">
+            <span class=" counter" style="display: inline-block; ">10</span>
+            <p>Mentors</p>
+        </div>
+        <div style="text-align:center" class="small-12 medium-3 large-4 column">
+            <span class=" counter" style="display: inline-block; ">22</span>
+            <p>Hours</p>
+        </div>
+    </div>
+
+
 
     <!-- SPONSORS SECTION -->
 
@@ -219,6 +242,8 @@
         </div>
 
     </footer>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
 
     <script src="js/smooth-scroll.js"></script>
     <script src="js/vendor/jquery.js"></script>
