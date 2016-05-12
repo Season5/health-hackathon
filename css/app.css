@@ -122,6 +122,39 @@ li a:hover {
     font-size: 20px;
 }
 
+/****************************
+countdown
+**************************/
+
+#clock {
+    display: block;
+    width: 40%;
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    /*    padding: 20px;*/
+    text-align: center;
+    background-color: transparent;
+}
+.block {
+    display: inline-block;
+    width: 16%;
+    margin: 1px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+.digit {
+    display: block;
+    font-size: 30px;
+    background-color: transparent;
+    color: white;
+}
+.block p {
+    font-size: 1rem;
+}
+
 /************************************************************************************ 
                ABOUT
 ************************************************************************************/
@@ -274,37 +307,4 @@ footer .row {
 .s_media {
     display: inline-block;
     padding: 0 4%;
-}
-
-/************************************************************************************ 
-countdown
-************************************************************************************/
-
-#clock {
-    display: block;
-    width: 40%;
-    min-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    /*    padding: 20px;*/
-    text-align: center;
-    background-color: transparent;
-}
-.block {
-    display: inline-block;
-    width: 16%;
-    margin: 1px;
-    padding: 5px;
-    font-size: 20px;
-    text-align: center;
-}
-.digit {
-    display: block;
-    font-size: 30px;
-    background-color: transparent;
-    color: white;
-}
-.block p {
-    font-size: 1rem;
 }
