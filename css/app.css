@@ -118,7 +118,7 @@ li a:hover {
 .date {
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 35px;
 }
 
 /****************************
@@ -171,7 +171,7 @@ countdown
     margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 3em;
+    font-size: 2.3em;
     color: #504949;
 }
 
