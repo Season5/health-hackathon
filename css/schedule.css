@@ -1,6 +1,8 @@
 body {
-    background-color: #e0e0e0;
-    font-family: "raleway", serif;
+    /*    background-color: #e0e0e0;*/
+    background-image: linear-gradient(rgba(28, 92, 50, 0.7), rgba(67, 67, 67, 0.7)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHElEQVQIW2P0eCzyf4fsG0YGKIAzMARgKjFUAABW7QgF+CoJfQAAAABJRU5ErkJggg==), url(../img/hero.jpg);
+    width: 100%;
+    color: white
 }
 .event-schedule h5 {
     text-align: center;
