@@ -6,7 +6,7 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Schedule</title>
-    <link href="css/foundation.css" rel="stylesheet">
+    <link href="css/foundation.min.css" rel="stylesheet">
     <link href="css/schedule.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
@@ -14,8 +14,61 @@
 
 <body>
 
+    <!--    HEADER -->
+
+
+    <!--    Responsive toggle-->
+
+    <div style="position: fixed;width: 100%;" class="title-bar " data-responsive-toggle="example-menu" data-hide-for="medium">
+        <button style="margin-top: 3%;" class="title-bar-right menu-icon" type="button" data-toggle></button>
+        <div class="title-bar"><img style="width: 50px;" class="web_logo" src="img/logo12.png"></div>
+    </div>
+
+
+    <!--            Nav bar in desktop mode-->
+    <div class="top-bar header " id="example-menu">
+
+        <!--top bar left -->
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <img class="web_logo" src="img/logo12.png">
+
+            </ul>
+        </div>
+
+
+
+        <!--top bar right -->
+
+        <div class=" top-bar-right xx">
+            <ul class="vertical medium-horizontal menu">
+
+
+                <li><a href="index.html#hero">HOME</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="index.html#partners">PARTNER</a></li>
+                <li><a href="./schedule.html">SCHEDULE</a></li>
+                <li><a href="index.html#contact">CONTACT </a></li>
+                <li><a data-open="exampleModal1" class="register-top-right">REGISTER</a></li>
+
+
+
+                <!--                modal on clicking register-->
+
+                <div class=" reveal" id="exampleModal1" data-reveal>
+                    <iframe src="https://docs.google.com/forms/d/1u3aX3y0PuUcgoBcfzFHBHqKT_rHoxDAaiw4xLPCX0Qs/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                    <button class="close-button" data-close aria-label="Close modal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+            </ul>
+        </div>
+
+    </div>
+
     <div class="row event-schedule">
-        <div class="small-9 columns small-centered">
+        <div class="small-9 columns small-centered schedule_content">
             <h5>HEALTH HACKATHON TIME SCHEDULE</h5>
             <article class="event">
                 <div class="event-date">
@@ -118,20 +171,12 @@
             <hr>
         </div>
     </div>
-    <script src="js/vendor/jquery.js">
-
-
-    </script>
-    <script src="js/vendor/what-input.js">
-
-
-    </script>
-    <script src="js/vendor/foundation.js">
-
-
-    </script>
-    <script src="js/app.js">
-
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        smoothScroll.init();
 
     </script>
 </body>
