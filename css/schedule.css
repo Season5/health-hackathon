@@ -1,8 +1,7 @@
 body {
     /*    background-color: #e0e0e0;*/
-    background-image: linear-gradient(rgba(28, 92, 50, 0.7), rgba(67, 67, 67, 0.7)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2NkYGD4zwABjFAazkCRgMvCVKFoISgIALKUAgbc0SfFAAAAAElFTkSuQmCC), url(../img/hero.jpg);
-    width: 100%;
-    color: white
+    background-image: linear-gradient(#297d2a, rgba(51, 102, 58, 0.7)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2NkYGD4zwABjFAazkCRgMvCVKFoISgIALKUAgbc0SfFAAAAAElFTkSuQmCC), url(../img/schedule-background.jpg);
+    color: white;
 }
 .event-schedule h5 {
     text-align: center;
