@@ -182,7 +182,11 @@ countdown
     margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
+<<<<<<< HEAD
     font-size: 2.5em;
+=======
+    font-size: 2.3em;
+>>>>>>> c9980e9a2b7fb448005ec8a34e01620aaf1628cd
     color: #504949;
 }
 
