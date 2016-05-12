@@ -49,6 +49,7 @@ body {
 }
 .header.scrolling {
     background-color: #005000;
+    opacity: 1;
     transition: .5s;
     z-index: 10;
 }
@@ -73,6 +74,9 @@ li a:hover {
 }
 .web_logo {
     width: 64px;
+}
+.title-bar {
+    z-index: 50;
 }
 
 /************************************************************************************ 
@@ -149,9 +153,10 @@ countdown
     font-size: 30px;
     background-color: transparent;
     color: white;
+    font-weight: bolder;
 }
-.block p {
-    font-size: 1rem;
+#clock .block p {
+    font-size: 16px;
 }
 
 /************************************************************************************ 
@@ -171,7 +176,7 @@ countdown
     margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 2.3em;
+    font-size: 2.5em;
     color: #504949;
 }
 
@@ -237,11 +242,11 @@ countdown
     .regg h3 {
         font-size: 1.2em;
     }
-    /*
     #hero-text-padding {
-     padding-top: 100px;
- }
-*/
+        padding-top: 40%;
+        position: absolute;
+        bottom: 5%;
+    }
     .hero p {
         text-align: center;
         color: #fff;
@@ -256,6 +261,19 @@ countdown
     }
     .xx {
         margin-top: -10px;
+    }
+    #clock .block p {
+        font-size: 15px;
+    }
+    .header {
+        position: static;
+    }
+    .top-bar ul {
+        background-color: transparent;
+        margin-top: 23%;
+        position: fixed;
+        width: 100%;
+        z-index: 4;
     }
 }
 

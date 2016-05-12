@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/logo12.png" type="image/gif" sizes="16x16">
     <link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/app.css">
@@ -23,7 +24,7 @@
 
     <!--    Responsive toggle-->
 
-    <div class="title-bar " data-responsive-toggle="example-menu" data-hide-for="medium">
+    <div style="position: fixed;width: 100%;" class="title-bar " data-responsive-toggle="example-menu" data-hide-for="medium">
         <button style="margin-top: 3%;" class="title-bar-right menu-icon" type="button" data-toggle></button>
         <div class="title-bar"><img style="width: 50px;" class="web_logo" src="img/logo12.png"></div>
     </div>
@@ -46,11 +47,13 @@
 
         <div class=" top-bar-right xx">
             <ul class="vertical medium-horizontal menu">
-                <li><a href="#hero">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#partners">PARTNER</a></li>
+
+
+                <li><a data-scroll href="#hero">HOME</a></li>
+                <li><a data-scroll href="#about">ABOUT</a></li>
+                <li><a data-scroll href="#partners">PARTNER</a></li>
                 <li><a href="./schedule.html">SCHEDULE</a></li>
-                <li><a href="#contact">CONTACT </a></li>
+                <li><a data-scroll href="#contact">CONTACT </a></li>
                 <li><a data-open="exampleModal1" class="register-top-right">REGISTER</a></li>
 
 
@@ -114,7 +117,9 @@
 
 
     <!--   ABOUT   -->
-    <section class="row about" id="about">
+
+    <section id="about" class="row about">
+
         <div id=about-padding>
 
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
@@ -131,8 +136,10 @@
     </section>
 
     <!-- SPONSORS SECTION -->
-    <section>
-        <div class="row sponsors" id="partners">
+
+    <section id="partners">
+        <div class="row sponsors">
+
             <h2 style="margin-bottom:5%;">PARTNERS</h2>
             <div class="small-12 medium-4 column"><img src="img/logo12.png">
                 <p>Karen Hospital</p>
@@ -172,7 +179,7 @@
                     <p>Entrepreneurs & Health stakeholders</p>
                 </div>
                 <div class="small-12 large-6 columns">
-                    <div id="map"></div>
+                    <div style="position: relative; z-index:2;" id="map"></div>
                     <script>
                         function initMap() {
                             var mapDiv = document.getElementById('map');
@@ -181,6 +188,7 @@
                                     lat: 44.540,
                                     lng: -78.546
                                 },
+                                zIndex: 1,
                                 zoom: 8,
                                 zoomControl: false,
                                 scaleControl: false,
@@ -210,10 +218,14 @@
 
     </footer>
 
-
+    <script src="js/smooth-scroll.js"></script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        smoothScroll.init();
+
+    </script>
 </body>
 
 </html>
