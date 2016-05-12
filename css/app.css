@@ -23,6 +23,9 @@ body {
 @media screen and (min-width: 40em) .reveal {
     width: 80%;
 }
+.row {
+    max-width: none;
+}
 
 /************************************************************************************ 
                Top-nav bar
@@ -165,6 +168,8 @@ countdown
 
 .about {
     text-align: center;
+    background-color: #f2f2f2;
+    max-width: none;
 }
 #about-padding {
     display: block;
@@ -333,12 +338,9 @@ footer .row {
 
 /**********************************/
 
-.timer {
-    width: 200px;
-    margin: 20px auto;
-    text-align: center;
-    display: block;
-    font-size: 20px
+.count_up {
+    font-size: 2em;
+    padding: 5% 0;
 }
 
 /*
