@@ -1,8 +1,11 @@
 body {
-    /*    background-color: #e0e0e0;*/
-    background-image: linear-gradient(rgba(28, 92, 50, 0.7), rgba(67, 67, 67, 0.7)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGElEQVQIW2NkYGD4z8DAwMgAI0AMdM5/ACRwAgMsRgU3AAAAAElFTkSuQmCC), url(../img/hero.jpg);
-    width: 100%;
-    color: white
+    background-image: linear-gradient(rgba(38, 82, 45, 0.7), rgba(0, 123, 0, 0.7)), url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGElEQVQIW2NkYGD4z8DAwMgAI0AMdM5/ACRwAgMsRgU3AAAAAElFTkSuQmCC), url(../img/hero.jpg);
+    color: white;
+    min-height: 400px;
+}
+body,
+html {
+    height: auto;
 }
 .event-schedule h5 {
     text-align: center;
