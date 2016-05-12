@@ -277,6 +277,7 @@ countdown
         margin-top: 23%;
         position: fixed;
         width: 100%;
+        z-index: 4;
     }
 }
 
