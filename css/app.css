@@ -319,7 +319,7 @@ countdown
   Media Query LANDSCAPE responsive mode starts
 ************************************************************************************/
 
-@media only screen and (orientation: landscape) {
+@media only screen (max-width:1000px) and (orientation: landscape) {
     .xx .register-top-right {
         margin-right: 0;
     }
