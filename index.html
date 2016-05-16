@@ -13,13 +13,24 @@
     <link rel="stylesheet" href="css/app.css">
     <title>Health Hackathon</title>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 3000
+            });
+        });
 
+    </script>
 </head>
 
 
 <body>
 
     <!--    HEADER -->
+
+
 
 
     <!--    Responsive toggle-->
@@ -49,7 +60,7 @@
             <ul class="vertical medium-horizontal menu">
 
 
-                <li><a data-scroll href="#hero">HOME</a></li>
+                <li><a data-scroll href="#hero" style="padding-top: 10%;">HOME</a></li>
                 <li><a data-scroll href="#about">ABOUT</a></li>
                 <li><a data-scroll href="#partners">PARTNER</a></li>
                 <li><a href="./schedule.html">SCHEDULE</a></li>
@@ -126,6 +137,26 @@
         </div>
     </section>
 
+
+    <!-- counter SECTION -->
+    <div class="row">
+        <div style="text-align:center" class="count_up small-12 medium-3 large-3 column">
+            <span class=" counter" style="display: inline-block;">200</span>
+            <p>Developers</p>
+        </div>
+        <div style="text-align:center" class="count_up small-12 medium-3 large-3 column">
+            <span class="column " style="display: inline-block;"><span>$</span><span class="counter">3,500</span></span>
+            <p>To be won</p>
+        </div>
+        <div style="text-align:center" class="count_up small-12 medium-3 large-3 column">
+            <span class=" counter" style="display: inline-block; ">10</span>
+            <p>Mentors</p>
+        </div>
+        <div style="text-align:center" class="count_up small-12 medium-3 large-3 column">
+            <span class=" counter" style="display: inline-block; ">22</span>
+            <p>Hours</p>
+        </div>
+    </div>
 
     <!--    Register section-->
     <section>
@@ -217,6 +248,8 @@
         </div>
 
     </footer>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
 
     <script src="js/smooth-scroll.js"></script>
     <script src="js/vendor/jquery.js"></script>

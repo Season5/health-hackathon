@@ -23,6 +23,9 @@ body {
 @media screen and (min-width: 40em) .reveal {
     width: 80%;
 }
+.row {
+    max-width: none;
+}
 
 /************************************************************************************ 
                Top-nav bar
@@ -166,6 +169,8 @@ countdown
 
 .about {
     text-align: center;
+    background-color: #f2f2f2;
+    max-width: none;
 }
 #about-padding {
     display: block;
@@ -187,7 +192,7 @@ countdown
 
 .sponsors {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 10% 0;
 }
 .sponsors img {
@@ -247,6 +252,7 @@ countdown
         padding-top: 40%;
         position: absolute;
         bottom: 5%;
+        width: 100%;
     }
     .hero p {
         text-align: center;
@@ -271,13 +277,72 @@ countdown
     }
     .top-bar ul {
         background-color: transparent;
-        margin-top: 23%;
+        margin-top: 20%;
         position: fixed;
         width: 100%;
         z-index: 4;
     }
     .reveal {
         top: 65px;
+    }
+}
+@media screen and (max-height: 535px) {
+    .hero p {
+        text-align: center;
+        color: #fff;
+        font-size: 1.5em;
+        line-height: 50px;
+    }
+    @media screen and (max-height: 320) {
+        #hero-text-padding {
+            padding-top: 40%;
+            position: absolute;
+            bottom: 5%;
+            width: 100%;
+        }
+        .hero p {
+            font-size: 1em;
+            line-height: 30px;
+            margin-bottom: 0px;
+        }
+    }
+    @media screen and (max-height: 600px) {
+        #hero-text-padding {
+            padding-top: 40%;
+            position: absolute;
+            bottom: 5%;
+            width: 100%;
+        }
+    }
+}
+
+/************************************************************************************ 
+  Media Query LANDSCAPE responsive mode starts
+************************************************************************************/
+
+@media only screen (max-width:1000px) and (orientation: landscape) {
+    .xx .register-top-right {
+        margin-right: 0;
+    }
+    .menu>li>a {
+        padding: 0.7em;
+    }
+    .hero p {
+        font-size: 1em;
+        line-height: 30px;
+        margin-bottom: 0px;
+    }
+    .date {
+        font-size: 25px;
+    }
+    #clock {
+        margin-top: 0px;
+    }
+    .digit {
+        font-size: 20px;
+    }
+    .web_logo {
+        width: 35px;
     }
 }
 
@@ -319,7 +384,8 @@ footer {
 }
 span.counter {
     display: inline-block;
-    width: 32%;
+    text-align: center;
+    /*    width: 32%;*/
 }
 footer .row {
     max-width: 83rem;
@@ -329,3 +395,20 @@ footer .row {
     display: inline-block;
     padding: 0 4%;
 }
+
+/**********************************/
+
+.count_up {
+    font-size: 2em;
+    padding: 5% 0;
+}
+
+/*
+#help {
+    width: 500px;
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+    font-size: 14px
+}
+*/
