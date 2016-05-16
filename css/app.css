@@ -111,6 +111,7 @@ li a:hover {
     color: white;
     border-radius: 5px;
     width: 300px;
+    -webkit-transition: background-color .5s ease-in-out;
 }
 .hero button:hover {
     border-color: green;
